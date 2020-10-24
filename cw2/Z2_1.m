@@ -12,7 +12,7 @@ y1 = kosinusy(A1, [0], 1, t1);
 wartosci_skuteczne(1) = skutecznaKosinusy(A1);
 
 figure;
-subplot(3,2,1);
+%subplot(3,2,1);
 plot(t1, y1);
 title('Z2.1.1');
 grid on;
@@ -24,7 +24,8 @@ A2 = [S 2*S];
 y2 = kosinusy(A2, [0 0], f2, t2);
 wartosci_skuteczne(2) = skutecznaKosinusy(A2);
 
-subplot(3,2,2);
+figure;
+%subplot(3,2,2);
 plot(t2, y2);
 title('Z2.1.2');
 grid on;
@@ -36,7 +37,8 @@ A3 = [0 S];
 y3 = kosinusy(A3, [0 -pi/2-pi/3], f3, t3);
 wartosci_skuteczne(3) = skutecznaKosinusy(A3);
 
-subplot(3,2,3);
+figure;
+%subplot(3,2,3);
 plot(t3, y3);
 title('Z2.1.3');
 grid on;
@@ -48,7 +50,8 @@ A4 = [-S 3*S 0 S];
 y4 = kosinusy(A4, [0 -pi/2+pi/4 0 -pi/4], f4, t4);
 wartosci_skuteczne(4) = skutecznaKosinusy(A4);
 
-subplot(3,2,4);
+figure;
+%subplot(3,2,4);
 plot(t4, y4);
 title('Z2.1.4');
 grid on;
@@ -60,7 +63,8 @@ A5 = [0 10*S 0 0 0 S 0 S];
 y5 = kosinusy(A5, [0 -pi/2 0 0 0 -pi/2 0 -pi/2], f5, t5);
 wartosci_skuteczne(5) = skutecznaKosinusy(A5);
 
-subplot(3,2,5);
+figure;
+%subplot(3,2,5);
 plot(t5, y5);
 title('Z2.1.5');
 grid on;
@@ -72,7 +76,8 @@ A6 = [0 2*S S];
 y6 = kosinusy(A6, [0 0 -pi/2], f6, t6);
 wartosci_skuteczne(6) = skutecznaKosinusy(A6);
 
-subplot(3,2,6);
+figure;
+%subplot(3,2,6);
 plot(t6, y6);
 title('Z2.1.6');
 grid on;
