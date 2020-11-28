@@ -22,5 +22,5 @@ for k=1:M
         cirbuff_address = cirbuff_address + 1;
     end
 % 5. obliczenie wartości sredniej
-    y=q/N;
+    y(k) = q/N;
 end
